@@ -4,7 +4,7 @@
 
 ## 构建镜像
 
-克隆本仓库并构建镜像
+克隆本仓库并构建镜像。
 
 例子:
 
@@ -16,7 +16,7 @@ sudo docker build -t hexo-docker:v1 .
 
 ## 运行镜像
 
-挂载/hexo目录和/root/.ssh目录
+挂载/hexo目录和/root/.ssh目录。
 
 例子:
 
