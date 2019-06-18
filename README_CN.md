@@ -28,7 +28,7 @@ sudo docker run -itd -p 4000:4000 -v /Users/dyb/github.io/CodePoem.github.io:/he
 
 ## 浏览
 
-在docker中的shell中你可以执行hexo相关的命令。
+在docker中的中你可以执行hexo相关的命令。
 
 例子:
 

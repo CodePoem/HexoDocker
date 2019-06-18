@@ -1,5 +1,7 @@
 # HexoDocker
 
+[中文文档](README_CN.md)
+
 Dockerfile for hexo blog.
 
 ## build image
@@ -26,7 +28,7 @@ sudo docker run -itd -p 4000:4000 -v /Users/dyb/github.io/CodePoem.github.io:/he
 
 ## look up
 
-In docker shell, you can execute the hexo command.
+In the docker, you can execute the hexo command.
 
 example:
 
@@ -36,4 +38,4 @@ hexo g
 hexo s
 ```
 
-Input localhost:4000 in browser and look up.
+Input localhost:4000 in the browser and look up.
