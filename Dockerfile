@@ -5,7 +5,7 @@ EXPOSE 4000
 VOLUME ["/hexo", "/root/.ssh" ]
 WORKDIR /hexo
 
-RUN npm install -g hexo-cli && \
+RUN npm install -g hexo hexo-cli && \
     apk update -y && \
     apk add -y bash git openssh-client
 
