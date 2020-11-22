@@ -10,8 +10,8 @@ Clone this repo and build image.
 
 example:
 
-```build image
-sudo docker build -t hexo-docker:v1 .
+```bash
+sudo docker build -t hexo-docker:latest .
 ```
 
 ## run image
@@ -20,10 +20,10 @@ Voluem /hexo and /root/.ssh dir.
 
 example:
 
-/Users/dyb/github.io/CodePoem.github.io and /Users/dyb/.ssh is my dir.
+/Users/xxx/xxx/xxx is my hexo dir and /Users/xxx/.ssh is my ssh dir.
 
-```run image
-sudo docker run -itd -p 4000:4000 -v /Users/dyb/github.io/CodePoem.github.io:/hexo -v /Users/dyb/.ssh:/root/.ssh hexo-docker:v1
+```bash
+sudo docker run -itd -p 4000:4000 -v /Users/xxx/xxx/xxx:/hexo -v /Users/xxx/.ssh:/root/.ssh hexo-docker:latest
 ```
 
 ## look up
@@ -32,7 +32,8 @@ In the docker, you can execute the hexo command.
 
 example:
 
-```hexo command
+```bash
+hexo --help
 hexo clean
 hexo g
 hexo s

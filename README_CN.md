@@ -1,6 +1,6 @@
 # HexoDocker
 
-用于Hexo博客的Dockerfile文件。
+用于 Hexo 博客的 Dockerfile 文件。
 
 ## 构建镜像
 
@@ -8,34 +8,35 @@
 
 例子:
 
-构建了一个名为hexo-docker的v1版本的镜像。
+构建了一个名为 hexo-docker 的 latest 版本的镜像。
 
-```构建镜像
-sudo docker build -t hexo-docker:v1 .
+```bash
+sudo docker build -t hexo-docker:latest .
 ```
 
 ## 运行镜像
 
-挂载/hexo目录和/root/.ssh目录。
+挂载 /hexo 目录和 /root/.ssh 目录。
 
 例子:
 
-/Users/dyb/github.io/CodePoem.github.io 和 /Users/dyb/.ssh 是我的私人目录。
+/Users/xxx/xxx/xxx 是我的 hexo 目录，/Users/xxx/.ssh 是我的 ssh 目录。
 
-```运行镜像
-sudo docker run -itd -p 4000:4000 -v /Users/dyb/github.io/CodePoem.github.io:/hexo -v /Users/dyb/.ssh:/root/.ssh hexo-docker:v1
+```bash
+sudo docker run -itd -p 4000:4000 -v /Users/xxx/xxx/xxx:/hexo -v /Users/xxx/.ssh:/root/.ssh hexo-docker:latest
 ```
 
 ## 浏览
 
-在docker中的中你可以执行hexo相关的命令。
+在 docker 容器中你可以执行hexo相关的命令。
 
 例子:
 
-```hexo 命令
+```bash
+hexo --help
 hexo clean
 hexo g
 hexo s
 ```
 
-在浏览器输入localhost:4000并浏览。
+在浏览器输入 localhost:4000 并浏览。

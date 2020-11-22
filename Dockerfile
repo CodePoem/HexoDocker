@@ -1,12 +1,12 @@
 FROM node:alpine
-LABEL Mr.D 806957428@qq.com
+LABEL CodePoem codepoetdream@gmail.com
 
 EXPOSE 4000
 VOLUME ["/hexo", "/root/.ssh" ]
 WORKDIR /hexo
 
 RUN npm install -g hexo hexo-cli && \
-    apk update -y && \
-    apk add -y bash git openssh-client
+    apk update && \
+    apk add bash git openssh-client
 
 ENTRYPOINT ["/bin/bash"]
